@@ -1,0 +1,30 @@
+Dear Samsung Security Team.
+
+I have yet found another security issue around lockscreen and locksettings I really spend all my life for helping you to find all bad and dangerous things that can compromise third-party-users, however, let me get to the point.
+
+
+## How I found this issue
+
+A) I execute: `for numbers in $(seq 1 254); do input keyevent ${numbers}; done` when I have the device locked of course behind security and notification and such things DISABLED on lockscreens
+
+B) After some numbers the device will start assistant on the android device in lockscreen, and immediatly after this it will take a screenshot, if you press CTRL+C at this point the device will freeze in the "white" mode that flashing on screen
+and if you now expand notification settings you will be able to see all notifications when they are supposed to be hidden.
+
+- Please notice notification bar is available to expand in default settings aswell from locksettings but it is just available to see the icons and few icons is available for enable/disable but if you take a screnshot sametime you open assistant whatever assistant that
+is used, googles, bixby or whatever exist out there you will be able to expand settings by hand and see notifications that is secret from lockscreen.. Get it? Cool
+
+C) For be sure this is not what is about to happen normally I of course power off screen and poweron again so lockscreens popoup and it's now impossibel as it should be as usual to see the notification of the device.
+
+I have found something really wierd in latest firmware for Android 14 in November patch that I must invegeste more  time in before report, so stay tuned for more. Hopefully you will solve this and take care and have fun!
+
+PS: This might be a Google Issue aswell but since I have my samsung device and "default" is "GOogle Assistant" app i decided to report this to you guys since you doing a a great and serious job you have prooven for me
+
+This does NOT work when Samsung Bixby or "Finder" is used it is only working when google assistant is set (as it is per default if bixby not has been configured wich is not common in Sweden at least since Google Assistant have support for swedish so this is for SURE a problem)
+
+#Ã## Suggestions
+
+Disable Google Assistant stock rom, there is no need for have this application installed if people can get comproimised they can download it from playstore anyway.
+
+Thanks
+
+Cheers 
